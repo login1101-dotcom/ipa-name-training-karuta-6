@@ -139,3 +139,10 @@ document.querySelectorAll(".card").forEach(card => {
 
 </body>
 </html>
+<script>
+fetch("https://counter-app.english-phonics.workers.dev/?app=ipa-name-training-karuta-6")
+  .then(res => res.json())
+  .then(data => {
+    console.log("今日のアクセス数:", data.count);
+  });
+</script>
